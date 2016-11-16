@@ -1,0 +1,50 @@
+% Kth colors for Latex documents
+%
+% Riccardo Sven Risuleo
+% 2016-09-06 11:05:40
+%
+
+%\NeedsTexFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{kthcolors}
+  %[2016-09-06 v1 Latex package with official KTH colors]
+
+\usepackage{xcolor}
+\definecolor{kth_blue}{RGB}{25,84,166}
+\definecolor{kth_red}{RGB}{157,16,45}
+\definecolor{kth_green}{RGB}{98,146,46}
+\definecolor{kth_light_blue}{RGB}{36,160,216}
+\definecolor{kth_light_green}{RGB}{176,210,43}
+\definecolor{kth_pink}{RGB}{216,84,151}
+\definecolor{kth_light_red}{RGB}{228,54,62}
+\definecolor{kth_yellow}{RGB}{250,185,25}
+\definecolor{kth_dark_gray}{RGB}{101,101,108}
+\definecolor{kth_gray}{RGB}{189,188,188}
+\definecolor{kth_light_gray}{RGB}{227,229,227}
+
+\DeclareOption{gray}{\colorlet{gray}{kthdgray}}
+
+\DeclareOption{all}{
+\colorlet{blue}{kth_blue}
+\colorlet{red}{kth_red}
+\colorlet{green}{kth_green}
+\colorlet{pink}{kth_pink}
+\colorlet{yellow}{kth_yellow}
+\colorlet{gray}{kth_dark_gray}
+\colorlet{lightblue}{kth_light_blue}
+\colorlet{lightred}{kth_light_red}
+\colorlet{lightgreen}{kth_light_green}
+\colorlet{lightgray}{kth_light_gray}
+\colorlet{middlegray}{kth_gray}
+}
+
+\DeclareOption{light}{
+\colorlet{blue}{kth_light_blue}
+\colorlet{red}{kth_light_red}
+\colorlet{green}{kth_light_green}
+}
+
+
+\DeclareOption*{\colorlet{\CurrentOption}{kth_\CurrentOption}}
+\ProcessOptions\relax
+
+\endinput
