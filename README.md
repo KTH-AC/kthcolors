@@ -13,17 +13,17 @@ to the header of your document (This will also include the `xcolor` package).
 
 The default package provides the following colors from the KTH official color profile:
 ```
-kth_blue = 25,84,166
-kth_red = 157,16,45
-kth_green = 98,146,46
-kth_light_blue = 36,160,216
-kth_light_green = 176,210,43
-kth_pink = 216,84,151
-kth_light_red = 228,54,62
-kth_yellow = 250,185,25
-kth_dark_gray = 101,101,108
-kth_gray = 189,188,188
-kth_light_gray = 227,229,227
+kth-blue = 25,84,166
+kth-red = 157,16,45
+kth-green = 98,146,46
+kth-light-blue = 36,160,216
+kth-light-green = 176,210,43
+kth-pink = 216,84,151
+kth-light-red = 228,54,62
+kth-yellow = 250,185,25
+kth-dark-gray = 101,101,108
+kth-gray = 189,188,188
+kth-light-gray = 227,229,227
 ```
 according to the KTH color profile palette
 ![kth palette](https://intra.kth.se/polopoly_fs/1.486828!/image/fargreferens_png.png)
@@ -33,19 +33,14 @@ There is some logic embedded in the package: if you add the name of a dvips colo
 ```
 \usepackage[red,blue]{kthcolors}
 ```
-will change all references to the color blue with references to `kth_blue` and all references to the color red to `kth_red`. You can use the flag `all` to change standard colors to their closest KTH matches:
+will change all references to the color blue with references to `kth-blue` and all references to the color red to `kth-red`. You can use the flag `all` to change standard colors to their closest KTH matches:
 ```
-blue -> kth_blue
-red -> kth_red
-green -> kth_green
-pink -> kth_pink
-yellow -> kth_yellow
-gray -> kth_dark_gray
-lightblue -> kth_light_blue
-lightred -> kth_light_red
-lightgreen -> kth_light_green
-lightgray -> kth_light_gray
-middlegray -> kth_gray
+blue -> kth-blue
+red -> kth-red
+green -> kth-green
+pink -> kth-pink
+yellow -> kth-yellow
+gray -> kth-dark-gray
 ```
 
 ## Hacking
