@@ -9,42 +9,48 @@
   %[2016-09-06 v1 Latex package with official KTH colors]
 
 \usepackage{xcolor}
-\definecolor{kth_blue}{RGB}{25,84,166}
-\definecolor{kth_red}{RGB}{157,16,45}
-\definecolor{kth_green}{RGB}{98,146,46}
-\definecolor{kth_light_blue}{RGB}{36,160,216}
-\definecolor{kth_light_green}{RGB}{176,210,43}
-\definecolor{kth_pink}{RGB}{216,84,151}
-\definecolor{kth_light_red}{RGB}{228,54,62}
-\definecolor{kth_yellow}{RGB}{250,185,25}
-\definecolor{kth_dark_gray}{RGB}{101,101,108}
-\definecolor{kth_gray}{RGB}{189,188,188}
-\definecolor{kth_light_gray}{RGB}{227,229,227}
+% Primary colors
+\definecolor{kth-blue}{RGB/cmyk}{25,84,166/0.849,0.494,0,0.349}
+\definecolor{kth-red}{RGB/cmyk}{157,16,45/0,0.898,0.713,0.384}
+\definecolor{kth-green}{RGB/cmyk}{98,146,46/0.329,0,0.685,0.427}
+% Secondary colors
+\definecolor{kth-lightblue}{RGB/cmyk}{36,160,216/0.833,0.259,0,0.153}
+\definecolor{kth-lightred}{RGB/cmyk}{228,54,62/0,0.763,0.728,0.106}
+\definecolor{kth-lightgreen}{RGB/cmyk}{176,201,43/0.124,0,0.786,0.212}
+% Tertiary colors (yet more colors)
+\definecolor{kth-pink}{RGB/cmyk}{216,84,151/10,0.611,0.301,0.153}
+\definecolor{kth-yellow}{RGB/cmyk}{250,185,25/0,0.26,0.9,0.0196}
+\definecolor{kth-darkgray}{RGB/cmyk}{101,101,108/0.0648,0.0648,0,0.576}
+\definecolor{kth-middlegray}{RGB/cmyk}{189,188,188/0,0.00529,0.00529,0.259}
+\definecolor{kth-lightgray}{RGB/cmyk}{227,229,227/0.00873,0,0.00873,0.102}
 
-\DeclareOption{gray}{\colorlet{gray}{kthdgray}}
+\DeclareOption{gray}{\colorlet{gray}{kth-darkgray}}
 
 \DeclareOption{all}{
-\colorlet{blue}{kth_blue}
-\colorlet{red}{kth_red}
-\colorlet{green}{kth_green}
-\colorlet{pink}{kth_pink}
-\colorlet{yellow}{kth_yellow}
-\colorlet{gray}{kth_dark_gray}
-\colorlet{lightblue}{kth_light_blue}
-\colorlet{lightred}{kth_light_red}
-\colorlet{lightgreen}{kth_light_green}
-\colorlet{lightgray}{kth_light_gray}
-\colorlet{middlegray}{kth_gray}
+% Primary colors
+\colorlet{blue}{kth-blue}
+\colorlet{red}{kth-red}
+\colorlet{green}{kth-green}
+% Secondary colors
+\colorlet{lightblue}{kth-lightblue}
+\colorlet{lightred}{kth-lightred}
+\colorlet{lightgreen}{kth-lightgreen}
+% Tertiary colors
+\colorlet{pink}{kth-pink}
+\colorlet{yellow}{kth-yellow}
+\colorlet{gray}{kth-darkgray}
+\colorlet{middlegray}{kth-gray}
+\colorlet{lightgray}{kth-lightgray}
 }
 
 \DeclareOption{light}{
-\colorlet{blue}{kth_light_blue}
-\colorlet{red}{kth_light_red}
-\colorlet{green}{kth_light_green}
+\colorlet{blue}{kth-lightblue}
+\colorlet{red}{kth-lightred}
+\colorlet{green}{kth-lightgreen}
 }
 
 
-\DeclareOption*{\colorlet{\CurrentOption}{kth_\CurrentOption}}
+\DeclareOption*{\colorlet{\CurrentOption}{kth-\CurrentOption}}
 \ProcessOptions\relax
 
 \endinput
