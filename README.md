@@ -16,14 +16,14 @@ The default package provides the following colors from the KTH official color pr
 kth-blue = 25,84,166
 kth-red = 157,16,45
 kth-green = 98,146,46
-kth-light-blue = 36,160,216
-kth-light-green = 176,210,43
+kth-lightblue = 36,160,216
+kth-lightred = 228,54,62
+kth-lightgreen = 176,210,43
 kth-pink = 216,84,151
-kth-light-red = 228,54,62
 kth-yellow = 250,185,25
-kth-dark-gray = 101,101,108
-kth-gray = 189,188,188
-kth-light-gray = 227,229,227
+kth-darkgray = 101,101,108
+kth-middlegray = 189,188,188
+kth-lightgray = 227,229,227
 ```
 according to the KTH color profile palette
 ![kth palette](https://intra.kth.se/polopoly_fs/1.486828!/image/fargreferens_png.png)
@@ -40,7 +40,7 @@ red -> kth-red
 green -> kth-green
 pink -> kth-pink
 yellow -> kth-yellow
-gray -> kth-dark-gray
+gray -> kth-darkgray
 ```
 
 ## Hacking
