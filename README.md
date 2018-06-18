@@ -43,5 +43,25 @@ yellow -> kth-yellow
 gray -> kth-darkgray
 ```
 
+## KTH Logo
+
+The package also provides the `\kthlogo` command, if it not already defined,
+to represent `kth-logo.pdf`, which is given inside the `lib` directory and
+has the correct blue color. In your documents, you can use it as follows:
+
+```
+% ...
+
+% \usepackage{graphicx}
+
+% ...
+
+\begin{figure}
+  \centering
+  \includegraphics[width = 10mm]{\kthlogo}
+\end{figure}
+
+```
+
 ## Hacking
 If you have comments or hacks that you would like to include, send me a message or post an issue or a pull request. Have fun!

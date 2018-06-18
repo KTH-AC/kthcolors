@@ -5,8 +5,7 @@
 %
 
 %\NeedsTexFormat{LaTeX2e}[1994/06/01]
-\ProvidesPackage{kthcolors}
-  %[2016-09-06 v1 Latex package with official KTH colors]
+\ProvidesPackage{kthcolors}[2018-06-18 v2 Latex package with official KTH colors]
 
 \usepackage{xcolor}
 % Primary colors
@@ -49,8 +48,10 @@
 \colorlet{green}{kth-lightgreen}
 }
 
-
 \DeclareOption*{\colorlet{\CurrentOption}{kth-\CurrentOption}}
+
+\providecommand{\kthlogo}{kth-logo.pdf}
+
 \ProcessOptions\relax
 
 \endinput
