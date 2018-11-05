@@ -7,7 +7,7 @@
 %\NeedsTexFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{kthcolors}[2018/06/18 v2 Latex package with official KTH colors]
 
-\usepackage{xcolor}
+\RequirePackage{xcolor}
 % Primary colors
 \definecolor{kth-blue}{RGB/cmyk}{25,84,166/0.849,0.494,0,0.349}
 \definecolor{kth-red}{RGB/cmyk}{157,16,45/0,0.898,0.713,0.384}
@@ -50,7 +50,7 @@
 
 \DeclareOption*{\colorlet{\CurrentOption}{kth-\CurrentOption}}
 
-\providecommand{\kthlogo}{kth-logo.pdf}
+\providecommand{\kthlogo}{logo.pdf}
 
 \ProcessOptions\relax
 
